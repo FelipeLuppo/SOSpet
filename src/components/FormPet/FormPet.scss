@@ -1,0 +1,35 @@
+.formulario {
+    padding: 15px;
+    border: 1px;
+    border-color: white;
+    border-radius: 15px;
+    background-color: #3f888f;
+    color: white;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;  
+    align-items: center;
+    justify-items: center;
+    h3 {
+        grid-column: 1/-1;
+    }
+    button[type="submit"] {
+        grid-column: -1/-2;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        label {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.form-check-label {
+    color: white;
+}

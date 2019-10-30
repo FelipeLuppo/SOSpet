@@ -1,26 +1,33 @@
 <template>
-<div class="">
- 
-  <div  class="corpoconteudo">
-	<Petcard nome= "Pixuleco" raca="Sphynx" idade="3 anos" imgurl="cat3.jpg"/>
-	<Petcard nome= "Carlos" raca="Sphynx" idade="3 anos" imgurl="images/cat3.jpg"/>
-	<Petcard nome= "Piu-Piu" raca="Sphynx" idade="3 anos" imgurl="hello-world/src/images/bird1.jpegg"/>
-	<Petcard nome= "Tobby" raca="Sphynx" idade="3 anos" imgurl="src/images/cat3.jpg"/>
+  <div class="pets">
+    <Petcard nome="Pixuleco" raca="Sphynx" idade="3 anos" imgurl="cat3.jpg" />
+    <Petcard
+      nome="Carlos"
+      raca="Sphynx"
+      idade="3 anos"
+      imgurl="images/cat3.jpg"
+    />
+    <Petcard
+      nome="Piu-Piu"
+      raca="Sphynx"
+      idade="3 anos"
+      imgurl="hello-world/src/images/bird1.jpegg"
+    />
+    <Petcard
+      nome="Tobby"
+      raca="Sphynx"
+      idade="3 anos"
+      imgurl="src/images/cat3.jpg"
+    />
+    <router-link to="addpet" class="button-plus">
+      <img src="@/images/add.png" width="50" height="50" class="add" />
+    </router-link>
   </div>
-<div class="row">
-	<div class="col-md-2 offset-md-5" style="margin-top:5px; color:white;">
-		<router-link to="addpet">
-				<img src="@/images/add.png" width="50" height="50" class="add">
-				</router-link>
-	</div>
-</div>
-
-</div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Petcard from "@/components/Petcard.vue";
+import Petcard from "@/components/Petcard/Petcard.vue";
 
 export default {
   name: "pets",
@@ -29,15 +36,16 @@ export default {
   }
 };
 </script>
-
-<style>
-.corpoconteudo{
-	height: 80%;
-	max-height: 550px;
-	overflow: scroll;
-}
-.add{
-	margin-top:10px;
-	margin-left: 60px;
+<style lang="scss">
+.pets {
+  position: relative;
+  display: grid;
+  gap: 15px;
+  .button-plus {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+	transform: translateX(calc(-50%) + 160px + 15px);
+  }
 }
 </style>

@@ -16,7 +16,7 @@
 
 <script>
 // @ is an alias to /src
-import FormSist from "@/components/FormSist.vue";
+import FormSist from "@/components/FormSist/FormSist.vue";
 
 export default {
   name: "sistespe",

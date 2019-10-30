@@ -1,0 +1,39 @@
+.cartao {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    border: 1px;
+    border-color: white;
+    border-radius: 15px;
+    /* background-color: #3f888f; */
+    background-image: linear-gradient(to left, #41acb6, #2d666b);
+    /* 41acb6 */
+    /* 3f888f */
+    padding: 15px;
+    gap: 15px;
+    .icones {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 30px;
+        align-content: center;
+    }
+    .petcard-body {
+        h2 {
+            justify-self: center;
+        }
+        display: grid;
+        align-content: space-between;
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .icone {
+        img {
+            height: 60px;
+            object-position: center;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
