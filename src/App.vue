@@ -54,7 +54,7 @@ body {
   margin: 0;
   padding: 0;
   letter-spacing: 0.08rem;
-  font-size: 16px;
+  font-size: 18px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   //00a2e8
 }
