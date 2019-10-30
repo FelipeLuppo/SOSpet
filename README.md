@@ -1,4 +1,4 @@
-# hello-world
+# SOS pet
 
 ## Project setup
 ```
