@@ -1,23 +1,35 @@
 <template>
   <div class="pets">
-    <Petcard nome="Pixuleco" raca="Sphynx" idade="3 anos" imgurl="cat3.jpg" />
+    <Petcard nome="Pixuleco" raca="Sphynx" idade="3 anos" imgurl="dog1.jpeg" />
     <Petcard
       nome="Carlos"
       raca="Sphynx"
       idade="3 anos"
-      imgurl="images/cat3.jpg"
+      imgurl="cat3.jpg"
     />
     <Petcard
       nome="Piu-Piu"
       raca="Sphynx"
       idade="3 anos"
-      imgurl="hello-world/src/images/bird1.jpegg"
+      imgurl="bird1.jpeg"
     />
     <Petcard
       nome="Tobby"
       raca="Sphynx"
       idade="3 anos"
-      imgurl="src/images/cat3.jpg"
+      imgurl="dog1.jpeg"
+    />
+	<Petcard
+      nome="Tobby"
+      raca="Sphynx"
+      idade="3 anos"
+      imgurl="bird1.jpeg"
+    />
+	<Petcard
+      nome="Tobby"
+      raca="Sphynx"
+      idade="3 anos"
+      imgurl="cat3.jpg"
     />
     <router-link to="addpet" class="button-plus">
       <img src="@/images/add.png" width="50" height="50" class="add" />
@@ -44,8 +56,8 @@ export default {
   .button-plus {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-	transform: translateX(calc(-50%) + 160px + 15px);
+    left: calc(50% + 80px);
+	transform: translateX(-50% );
   }
 }
 </style>

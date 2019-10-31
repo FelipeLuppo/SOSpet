@@ -1,8 +1,10 @@
 <template>
   <div class="cartao">
     <!-- Required scripts -->
+	<!-- src='@/images/cat3.jpg' -->
     <img
-      src="@/images/cat3.jpg"
+
+	:src="require(`@/images/${imgurl}`)"
       width="100"
       height="100"
       class="img-thumbnail float-left"

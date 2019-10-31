@@ -29,7 +29,16 @@
         }
     }
 }
-
+.ponto {
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    color: rgb(32, 28, 28);
+    display: grid;
+    gap: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 .form-check-label {
     color: white;
 }

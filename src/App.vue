@@ -1,11 +1,13 @@
 <template>
   <div class="world">
     <div class="sidenav">
-      <router-link to="/">SOS pet</router-link>
+	  <img src="@/images/logoazul2.png">
+  
       <router-link to="pets">Pets</router-link>
       <router-link to="/addpet">Add Pet</router-link>
       <router-link to="/vets">Vets</router-link>
       <router-link to="/consultas">Consultas</router-link>
+	  <router-link to="/login">Login</router-link>
     </div>
     <div class="main">
       <router-view />
@@ -59,21 +61,25 @@ body {
   //00a2e8
 }
 .world {
+	position: relative;
   display: grid;
   grid-template-columns: 160px 1fr;
   justify-items: flex-start;
   align-items: flex-start;
+  height: 100%;
 }
 .sidenav {
   height: 100%;
   width: 100%;
-  position: sticky;
-  top: 0;
-  left: 0;
   //   background-color: #201e1e;
   background-image: linear-gradient(#201e1e, #423e3e);
   overflow-x: hidden;
   padding-top: 20px;
+  img{
+	  width: 100px;
+	  height: 80px;
+	margin-left: 30px;
+  }
 }
 
 .sidenav a {
@@ -91,12 +97,15 @@ body {
 .main {
   padding: 10px;
   width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 input,
 select {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  height: 39px;
 }
 img {
   margin: 0;

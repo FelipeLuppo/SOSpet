@@ -1,31 +1,47 @@
 <template>
   <form class="formulario">
-    
+
     <div class="ponto">
-		<div class="imagem">
-		<img src="@/images/logoazul2.png" width="150"> 
-		</div>
       <div class="form-group">
-        <label for="inputEmail4">Usuário</label>
-        <input type="email" class="form-control" id="email" placeholder="Usuário" />
+
+		  
+        <label for="inputEmail4">Nome</label>
+        <input type="text" class="form-control" id="email" placeholder="Usuário" />
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail4">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Usuário" />
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail4">Usuario</label>
+        <input type="text" class="form-control" id="email" placeholder="Usuário" />
+      </div>
+	  <div class="form-group">
+        <label for="inputEmail4">Cidade</label>
+        <input type="text" class="form-control" id="email" placeholder="Usuário" />
       </div>
       <div class="form-group">
         <label for="inputPassword4">Senha</label>
+        <input type="password" class="form-control" id="senha" placeholder="Senha" />
+		<label for="inputPassword4">Confirmar Senha</label>
         <input type="password" class="form-control" id="senha" placeholder="Senha" />
         <div class="botoes">
           <button type="submit" class="btn btn-primary" @click="$router.push('pets')">Entrar</button>
           <router-link class="link" to="registrar">Registar-se</router-link>
         </div>
-		
       </div>
     </div>
   </form>
 </template>
 
 <script>
+// @ is an alias to /src
+
 export default {
-  name: "login",
-  components: {}
+  name: "registrar",
+  components: {
+
+  }
 };
 </script>
 
@@ -51,11 +67,7 @@ export default {
     grid-column: 1/-1;
   }
 }
-.imagem{
-	display: grid;
-	justify-content: center;
-	align-items: center;
-}
+
 .formulario {
   padding: 15px;
   border: 1px;

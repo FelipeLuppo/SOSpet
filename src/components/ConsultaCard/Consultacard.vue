@@ -1,31 +1,29 @@
 <template>
-  <div class="cartao">
-    {{ pet }}
-    {{ data }}
-    {{ horario }}
-    {{ medico }}
-    {{ endereco }}
-    <router-link to="/sistespe">
-      <img src="@/images/calendar.png" width="60" height="60" class="icone" />
-    </router-link>
-    <!-- <button type="button" class="btn btn-secondary">Editar</button><br><br>
-    <button type="button" class="btn btn-success">Diagnosticar</button>-->
+ <div class="cartao">
+    <!-- Required scripts -->
+	<!-- src='@/images/cat3.jpg' -->
+    <img
 
-    <!--       
-		<h3>
-			{{nome}}
-		</h3>
-		<p>
-			{{raca}}
-			<br>
-			{{idade}}
-		</p>
-		<button class="btn btn-success">
-			Diagnosticar
-		</button>
-		<button>
-			Editar
-    </button>-->
+	:src="require(`@/images/calendar.png`)"
+      width="100"
+      height="100"
+      class="img-thumbnail float-left"
+    />
+    <div class="petcard-body">
+    <h2>{{ nome }}</h2>
+    <div class="row">
+      <div class="col-md-6">Raça: {{ raca }}</div>
+      <div class="col-md-6">Idade: {{ idade }}</div>
+    </div>
+    </div>
+    <div class="icones">
+      <router-link to="/sistespe" class="icone">
+        <img src="@/images/doc.png" />
+      </router-link>
+      <router-link :to="{ name: 'addpet', params: { id: nome } }" class="icone">
+        <img src="@/images/edit.png" />
+      </router-link>
+    </div>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="pets">
     <Consultacard
       pet="Pixuleco"
       horario="10:30"
@@ -42,3 +42,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.pets {
+  position: relative;
+  display: grid;
+  gap: 15px;
+  .button-plus {
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% + 80px);
+	transform: translateX(-50% );
+  }
+}
+</style>

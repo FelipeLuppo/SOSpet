@@ -4,6 +4,7 @@ export default {
     nome: String,
     crmv: String,
     especialidade: String,
-    endereco: String
+	endereco: String,
+	nota: String,
   }
 };

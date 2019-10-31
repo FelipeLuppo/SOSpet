@@ -1,6 +1,9 @@
 <template >
+
   <form class="formulario">
+
     <h1>Cadastrar um novo pet</h1>
+	<div class="ponto">
     <div class="form-group">
       <label for="inputEmail4">Nome</label>
       <input
@@ -59,6 +62,7 @@
     <button type="submit" class="btn btn-primary" @click="$router.push('pets')">
       Cadastrar
     </button>
+	</div>
   </form>
 </template>
 
