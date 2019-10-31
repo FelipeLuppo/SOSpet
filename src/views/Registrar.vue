@@ -1,7 +1,7 @@
 <template>
   <form class="formulario">
 
-    <div class="ponto">
+    <div class="caixa">
       <div class="form-group">
 
 		  
@@ -90,8 +90,8 @@ export default {
     justify-self: flex-end;
     align-self: flex-end;
   }
-  .ponto {
-    width: 40%;
+  .caixa {
+    width: 80%;
     background-color: white;
     padding: 15px;
     color: rgb(32, 28, 28);

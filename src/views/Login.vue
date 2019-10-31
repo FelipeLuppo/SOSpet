@@ -79,7 +79,7 @@ export default {
     align-self: flex-end;
   }
   .ponto {
-    width: 40%;
+    width: 60%;
     background-color: white;
     padding: 15px;
     color: rgb(32, 28, 28);
