@@ -4,19 +4,17 @@
     border-color: white;
     border-radius: 15px;
     background-color: #3f888f;
-    color: black;
-    height: 96vh;
+    color: white;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;  
     align-items: center;
     justify-items: center;
-    h1 {
-		grid-column: 1/-1;
-		color: white;
-	}
-	
-	button[type="submit"] {
+    h3 {
+        grid-column: 1/-1;
+    }
+    button[type="submit"] {
         grid-column: -1/-2;
         justify-self: flex-start;
         align-self: flex-start;
@@ -26,27 +24,20 @@
         border: 1px solid transparent;
         border-radius: .25rem;
         font-weight: 400;
-		font-size: 1.3rem;
-		a {
-			text-decoration: none;
-			font-size: 80%;
-			color: white;
-			display: block;
-		  }
-		  a:hover {
-			color: #0682b8;
-		  }
+        font-size: 1.3rem;
     }
 
-    .form-grouppet {
-        display: block;
-        // flex-direction: column;
-		justify-content: space-around;
-       
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        label {
+            margin-bottom: 15px;
+        }
 	}
-	.check{
-		display: flex;
-		align-items: center;
+	.botaoesquerda{
+		display: grid;
+		justify-content: left;
 	}
 }
 .back {
@@ -61,5 +52,5 @@
     border-radius: 10px;
   }
 .form-check-label {
-    color: black;
+    color: white;
 }

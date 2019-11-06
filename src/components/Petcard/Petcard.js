@@ -4,6 +4,7 @@ export default {
     nome: String,
     raca: String,
     idade: String,
-    imgurl: String
+	imgurl: String,
+	especie: String
   }
 };

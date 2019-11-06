@@ -5,7 +5,6 @@ export default {
       medico: String,
       data: String,
       horario: String,
-	  endereco: String,
-	  avaliado: String,
+      endereco: String
     }
   };

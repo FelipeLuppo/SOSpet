@@ -1,5 +1,18 @@
 <template>
+  <div class="world">
+    <div class="sidenav">
+	  <img src="@/images/logoazul2.png">
+  
+      <router-link to="pets">Pets</router-link>
+      <!-- <router-link to="/addpet">Add Pet</router-link> -->
+      <!-- <router-link to="/vets">Vets</router-link> -->
+      <router-link to="/consultas">Consultas</router-link>
+	  <!-- <router-link to="/login">Login</router-link> -->
+    </div>
+    <div class="main">
       <router-view />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">

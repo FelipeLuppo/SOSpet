@@ -1,5 +1,10 @@
 <template>
+ 
+
+    <div class="main">
       <router-view />
+    </div>
+
 </template>
 
 <style lang="scss">
@@ -9,6 +14,7 @@ body,
 .main {
   height: 100%;
   width: 100%;
+  
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

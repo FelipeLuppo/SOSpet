@@ -13,7 +13,11 @@
         <label for="inputPassword4">Senha</label>
         <input type="password" class="form-control" id="senha" placeholder="Senha" />
         <div class="botoes">
-          <button type="submit" class="btn btn-primary" @click="$router.push('pets')">Entrar</button>
+
+			<router-link class="link" to="pets">
+
+          <button type="submit" class="btn btn-primary" >Entrar</button>
+			</router-link>
           <router-link class="link" to="registrar">Registar-se</router-link>
         </div>
 		
@@ -73,11 +77,18 @@ export default {
   h3 {
     grid-column: 1/-1;
   }
-  button[type="submit"] {
-    grid-column: -1/-2;
-    justify-self: flex-end;
-    align-self: flex-end;
-  }
+ 	button[type="submit"] {
+        grid-column: -1/-2;
+        justify-self: flex-start;
+        align-self: flex-start;
+        padding: 1%;
+        color: #fff;
+        background-color: #3f888f;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
   .ponto {
     width: 60%;
     background-color: white;
@@ -105,7 +116,7 @@ export default {
       height: 40px;
     }
     .botoes {
-      display: grid;
+      display: flex;
       justify-content: space-between;
       align-items: center;
       a {

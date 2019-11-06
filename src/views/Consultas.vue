@@ -6,27 +6,32 @@
       medico="Carlos Macedo"
       endereco="Rua Coronel José Adolfo Oliveira, 2623"
       data="24/02/2018"
+	  avaliado=""
     />
     <Consultacard
       pet="Tobby"
       horario="15:30"
       medico="Matheus Sudul"
       endereco="Rua Coronel José Adolfo Oliveira, 2623"
-      data="24/02/2018"
+      data="25/03/2018"
+	  avaliado=""
     />
     <Consultacard
       pet="Piu-Piu"
-      horario="17:0"
+      horario="17:30"
       medico="Hiogo Cavalo"
       endereco="Rua Coronel José Adolfo Oliveira, 2623"
-      data="24/02/2018"
+      data="24/06/2019"
+	  avaliado="empty"
     />
+	
     <Consultacard
       pet="Vicky"
       horario="09:30"
       medico="Andre Macedo"
       endereco="Rua Coronel José Adolfo Oliveira, 2623"
-      data="24/02/2018"
+      data="24/11/2019"
+	  avaliado="future"
     />
   </div>
 </template>

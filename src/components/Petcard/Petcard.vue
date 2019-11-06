@@ -17,7 +17,8 @@
     </div>
     </div>
     <div class="icones">
-      <router-link to="/sistespe" class="icone">
+		<!-- ARRUMAR PARA ENTRAR DIRECIONALMENTE EM CADA  -->
+      <router-link to="/sistespe" class="icone" >
         <img src="@/images/doc.png" />
       </router-link>
       <router-link :to="{ name: 'addpet', params: { id: nome } }" class="icone">

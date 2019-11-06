@@ -1,35 +1,40 @@
 <template>
   <div class="pets">
-    <Petcard nome="Pixuleco" raca="Sphynx" idade="3 anos" imgurl="dog1.jpeg" />
+    <Petcard nome="Pixuleco" raca="Sphynx" idade="3 anos" imgurl="dog1.jpeg" especie ="cachorro" />
     <Petcard
       nome="Carlos"
       raca="Sphynx"
       idade="3 anos"
       imgurl="cat3.jpg"
+	  especie="gato"
     />
     <Petcard
       nome="Piu-Piu"
       raca="Sphynx"
       idade="3 anos"
       imgurl="bird1.jpeg"
+	  especie="passaro"
     />
     <Petcard
       nome="Tobby"
       raca="Sphynx"
       idade="3 anos"
       imgurl="dog1.jpeg"
+	  especie ="cachorro"
     />
 	<Petcard
       nome="Tobby"
       raca="Sphynx"
       idade="3 anos"
       imgurl="bird1.jpeg"
+	  especie="passaro"
     />
 	<Petcard
       nome="Tobby"
       raca="Sphynx"
       idade="3 anos"
       imgurl="cat3.jpg"
+	  especie="gato"
     />
     <router-link to="addpet" class="button-plus">
       <img src="@/images/add.png" width="50" height="50" class="add" />

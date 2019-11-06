@@ -1,15 +1,9 @@
 <template>
 <div class="">
 
-  <div  class="corpo">
+ 
 	<FormSist especie="gato" />
-	<!-- <FormSist especie="gato"/>
-	<FormSist especie="gato"/> -->
-  </div>
-<!-- <div>
-	<button>CALCULAR
-	</button>
-</div> -->
+
 
 </div>
 </template>
